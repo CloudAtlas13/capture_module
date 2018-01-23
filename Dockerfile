@@ -8,7 +8,7 @@ WORKDIR /app
 ADD . /app
 
 # Install any needed packages specified in requirements.txt
-RUN apt-get update && apt-get install -y gcc
+RUN apt-get update && apt-get install -y gcc software-properties-common
 RUN pip3 install --trusted-host pypi.python.org -r requirements.txt
 
 # Make port 80 available to the world outside this container
