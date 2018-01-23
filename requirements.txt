@@ -1,0 +1,4 @@
+netifaces
+kafka
+scapy-python3
+numpy
